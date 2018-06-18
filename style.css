@@ -1,0 +1,136 @@
+body {
+  background: #262626;
+  color: #4AD0EC;
+  font-family: Helvetica;
+  letter-spacing: 0.15em;
+  width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+  color: #FFF;
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.container p, .container h1 {
+  width: 100%
+}
+
+body,
+html {
+  margin: 0;
+  background: #0e0f11;
+  color: #ecf0f1;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 80vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contain {
+  width: 100%;
+}
+.contain h1 {
+  font-size: 70px;
+}
+.row {
+  overflow: scroll;
+  width: 100%;
+  margin-top: -3em;
+}
+.row__inner {
+  font-size: 0;
+  white-space: nowrap;
+  margin: 70px 0;
+  padding-bottom: 10px;
+}
+
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  height: 500px;
+  margin-right: 10px;
+  font-size: 33px;
+  cursor: pointer;
+  transition: 450ms all;
+}
+.tile__img {
+  width: 100%;
+  height: 495px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tile__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  -webkit-transition: 450ms opacity;
+  transition: 450ms opacity;
+}
+.tile__details:after,
+.tile__details:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.tile__details:after {
+  margin-top: -45px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ecf0f1;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.tile__details:before {
+  content: '▶';
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 7px;
+  margin-top: -38px;
+  text-align: center;
+  z-index: 2;
+}
+.tile .tile__details {
+  opacity: 1;
+  overflow: hidden;
+}
+.tile__title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  max-width: 85%;
+  overflow: hidden;
+}
+.tile:focus {
+  outline: 5px solid #831010;
+}
